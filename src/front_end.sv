@@ -26,7 +26,7 @@ module tomasulo_front_end_cluster (
     /*AGU signals*/
     output queue_agu_en,
     output queue_agu_ls,
-    output queue_agu_imm,
+    output [31:0] queue_agu_imm,
     /*Mult queue*/
     output queue_mul_en,
     /*Div queue*/

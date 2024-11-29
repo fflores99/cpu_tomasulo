@@ -533,3 +533,353 @@ run
 run
 run
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/do/front_end_sim.do
+quit -sim
+# End time: 15:04:42 on Nov 29,2024, Elapsed time: 2:24:01
+# Errors: 0, Warnings: 2
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv failed with 1 errors.
+# Compile of alu_reservation_reg.sv failed with 3 errors.
+# Compile of issue_ctrl.sv was successful.
+# 22 compiles, 2 failed with 4 errors.
+# Compile of alu_reservation_reg.sv failed with 1 errors.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv failed with 1 errors.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# 22 compiles, 1 failed with 1 error.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.frontend_tb
+# vsim -voptargs="+acc" work.frontend_tb 
+# Start time: 15:24:18 on Nov 29,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.frontend_tb(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.rom(fast)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+cd ..
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+do ../do/front_end_sim.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: frfdm  Hostname: FAFILAPTOP  ProcessID: 1716
+#           Attempting to use alternate WLF file "./wlft9eiq4t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9eiq4t
+run
+run
+quit -sim
+# End time: 15:47:44 on Nov 29,2024, Elapsed time: 0:23:26
+# Errors: 0, Warnings: 10
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv failed with 1 errors.
+# Compile of agu_reservation_queue.sv failed with 2 errors.
+# Compile of agu_reservation_reg.sv failed with 1 errors.
+# 26 compiles, 4 failed with 4 errors.
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv failed with 1 errors.
+# Compile of agu_reservation_queue.sv failed with 2 errors.
+# Compile of agu_reservation_reg.sv failed with 1 errors.
+# Compile of issue_ctrl.sv was successful.
+# 26 compiles, 3 failed with 4 errors.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv failed with 1 errors.
+# Compile of agu_reservation_reg.sv failed with 2 errors.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# 26 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.frontend_tb
+# vsim -voptargs="+acc" work.frontend_tb 
+# Start time: 15:52:37 on Nov 29,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.frontend_tb(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.rom(fast)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'queue_agu_imm'. The port definition is at: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv(33).
+#    Time: 0 ps  Iteration: 0  Instance: /frontend_tb/UUT/DPCH_UNIT File: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/front_end.sv Line: 64
+quit -sim
+# End time: 15:52:51 on Nov 29,2024, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 17
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# 26 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.frontend_tb
+# vsim -voptargs="+acc" work.frontend_tb 
+# Start time: 15:54:38 on Nov 29,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.frontend_tb(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.rom(fast)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'queue_agu_imm'. The port definition is at: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/front_end.sv(29).
+#    Time: 0 ps  Iteration: 0  Instance: /frontend_tb/UUT File: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/frontend_tb.sv Line: 47
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'queue_agu_imm'. The port definition is at: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv(33).
+#    Time: 0 ps  Iteration: 0  Instance: /frontend_tb/UUT/DPCH_UNIT File: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/front_end.sv Line: 64
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# 26 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.frontend_tb(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.rom(fast)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+quit -sim
+# End time: 15:55:53 on Nov 29,2024, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 2

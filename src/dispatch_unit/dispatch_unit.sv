@@ -30,7 +30,7 @@ module dispatch_unit (
     /*AGU signals*/
     output queue_agu_en,
     output queue_agu_ls,
-    output queue_agu_imm,
+    output [31:0] queue_agu_imm,
     /*Mult queue*/
     output queue_mul_en,
     /*Div queue*/
@@ -351,10 +351,10 @@ QUEUE_OP2_MUX
     .SEL(ctrl_op2_sel),
     .Y(queue_op2_data)
 );
-/*OPERAND 1 VALID*/
-assign queue_op1_data_valid = ~rs1_tag_valid | rs1_cdb_fw;
-/*OPERAND 2 VALID*/
-assign queue_op2_data_valid = ~rs2_tag_valid | rs2_cdb_fw;
+/*OPERAND 1 VALID. If value is forced to 0 or PC, data is valid, else, depends on register status*/
+assign queue_op1_data_valid = (ctrl_op1_sel != 2'b01) ? 1'b1 : ~rs1_tag_valid | rs1_cdb_fw;
+/*OPERAND 2 VALID. If value is forced to immediate, data is valid, else, depends on register status*/
+assign queue_op2_data_valid = (ctrl_op2_sel != 1'b1) ? 1'b1 : ~rs2_tag_valid | rs2_cdb_fw;
 /***************************************************
 * PC QUEUE STORAGE                                 *
 ***************************************************/

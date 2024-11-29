@@ -107,7 +107,7 @@ always_comb begin : decoder
         ctrl_jmp        = 1'b0; /*No Jump*/
         ctrl_jmp_reg    = 1'b0; /*No JALR*/
         ctrl_op1_sel    = 2'b01; /*OP1 uses RS1*/
-        ctrl_op2_sel    = 1'b0; /*OP2 uses IMM, especial buss for imm to agu*/
+        ctrl_op2_sel    = 1'b1; /*OP2 uses IMM, especial buss for imm to agu*/
         ctrl_branch     = 1'b0; /*No branch instruction*/
         queue_alu_en    = 1'b0; /*No ALU operation*/
         queue_mul_en    = 1'b0; /*No multiplication*/

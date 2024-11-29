@@ -8,9 +8,9 @@ module fifo_param #(
     input push,
     input pull,
     input [WIDTH-1:0] data_in,
-    output [WIDTH-1:0] data_out,
-    output empty,
-    output full
+    output reg [WIDTH-1:0] data_out,
+    output reg empty,
+    output reg full
 );
 
 reg [$clog2(WIDTH) - 1:0] write_ptr, read_ptr;
@@ -22,10 +22,10 @@ assign data_out = fifo_data[read_ptr];
 always_ff @( posedge clk, posedge rst ) begin : fifo
     if(rst) begin
         integer i;
-        write_ptr <= 7'b1000000;
-        read_ptr  <= 7'b0000000;
-        fifo_full <= 1'b1;
-        fifo_empty <= 1'b0;
+        write_ptr <= {$clog2(WIDTH){1'b0}};
+        read_ptr  <= {$clog2(WIDTH){1'b0}};
+        full <= 1'b0;
+        empty <= 1'b1;
         for(i = 0; i < SIZE; i += 1) begin
             fifo_data[i] <= {WIDTH{1'b0}};
         end

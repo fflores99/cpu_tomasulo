@@ -1,18 +1,18 @@
 module dispatch_ctrl (
-    input [31:0] icode;
-    output reg queue_alu_en;
-    output reg [2:0] queue_alu_ext;
-    output reg queue_agu_en;
-    output reg queue_agu_ls;
-    output reg queue_mul_en;
-    output reg queue_div_en;
+    input [31:0] icode,
+    output reg queue_alu_en,
+    output reg [2:0] queue_alu_ext,
+    output reg queue_agu_en,
+    output reg queue_agu_ls,
+    output reg queue_mul_en,
+    output reg queue_div_en,
     
-    output reg ctrl_reg_w;
-    output reg ctrl_jmp;
-    output reg ctrl_jmp_reg;
-    output reg [1:0] ctrl_op1_sel;
-    output reg ctrl_op2_sel;
-    output reg ctrl_branch;
+    output reg ctrl_reg_w,
+    output reg ctrl_jmp,
+    output reg ctrl_jmp_reg,
+    output reg [1:0] ctrl_op1_sel,
+    output reg ctrl_op2_sel,
+    output reg ctrl_branch
 );
 
 wire [6:0] opcode = icode[6:0];
@@ -118,7 +118,7 @@ always_comb begin : decoder
         /*Store*/
         queue_agu_en    = 1'b1; /*Memory operation*/
         queue_agu_ls    = 1'b1; /*store operation*/
-        ctrl_reg_w      = 1'b1; /*Register write back*/
+        ctrl_reg_w      = 1'b0; /*Register not write back*/
         ctrl_jmp        = 1'b0; /*No Jump*/
         ctrl_jmp_reg    = 1'b0; /*No JALR*/
         ctrl_op1_sel    = 2'b01; /*OP1 uses RS1*/

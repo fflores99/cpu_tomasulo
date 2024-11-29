@@ -34,7 +34,7 @@ module dispatch_unit (
     /*Mult queue*/
     output queue_mul_en,
     /*Div queue*/
-    output queue_div_en,    
+    output queue_div_en    
 );
 
 /***************************************************
@@ -151,7 +151,7 @@ mux_param #(
     .WIDTH(32), 
     .N(2)
 )
-JMP_BR_MUX
+JMP_CDB_MUX
 (
     .X('{cdb.data,jmp_or_branch_addr}),
     .SEL(cdb.jalr),
@@ -161,7 +161,7 @@ JMP_BR_MUX
 * RSx SELECTOR                                     *
 ***************************************************/
 wire [31:0] rf_rs1_data_out;
-wire [31:0] re_rs2_data_out;
+wire [31:0] rf_rs2_data_out;
 wire rs1_tag_cmp_out;
 wire rs2_tag_cmp_out;
 /* REGISTER FILE
@@ -176,7 +176,7 @@ register_file REG_FILE (
 	.RD(rf_rd),
 	.DATA_IN(rf_rd_data),
 	.RS1_DATA(rf_rs1_data_out),
-	.RS2_DATA(re_rs2_data_out)
+	.RS2_DATA(rf_rs2_data_out)
 );
 /*CDB DATA FORWARD TAG COMPARATORS*/
 assign rs1_tag_cmp_out = (cdb.tag == rs1_tag) ? 1'b1 : 1'b0;
@@ -343,7 +343,7 @@ QUEUE_OP1_MUX
  */
 mux_param #(
     .WIDTH(32), 
-    .N(4)
+    .N(2)
 )
 QUEUE_OP2_MUX
 (
@@ -366,7 +366,7 @@ wire [31:0] pc_plus_four;
 adder_param #(
     .WIDTH(32)
 ) 
-JMP_ADDR_ADDER
+PC_ADD_FOUR
 (
     .A(ifq_pc),
     .B(32'd4),

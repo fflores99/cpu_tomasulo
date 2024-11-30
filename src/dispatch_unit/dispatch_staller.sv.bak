@@ -77,7 +77,7 @@ always_ff @( posedge clk, posedge rst ) begin : sequential
                 else
                     state <= STALLING_FOR_JALR;
             STALLING_FOR_QUEUE_FREE:
-                if((alu_dispatch & alu_full) | (mul_dispatch & mul_full) | (div_dispatch & div_full) | (agu_dispatch & agu_full) )
+                if((alu_dispatch & alu_full) | (mul_dispatch & mul_full) | (div_dispatch & dev_full) | (agu_dispatch & agu_full) )
                     state <= STALLING_FOR_QUEUE_FREE;
                 else
                     state <= NORMAL_OP;

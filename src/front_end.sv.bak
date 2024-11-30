@@ -105,7 +105,7 @@ dispatch_unit DPCH_UNIT (
     .alu_full(alu_full),
     .mul_full(mul_full),
     .agu_full(agu_full),
-    .div_full(div_full)
+    .div_full(div_full),
 );
 
 endmodule

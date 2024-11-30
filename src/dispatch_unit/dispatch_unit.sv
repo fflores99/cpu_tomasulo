@@ -34,7 +34,11 @@ module dispatch_unit (
     /*Mult queue*/
     output queue_mul_en,
     /*Div queue*/
-    output queue_div_en    
+    output queue_div_en,
+    input alu_full,
+    input mul_full,
+    input agu_full,
+    input div_full
 );
 
 /***************************************************
@@ -272,6 +276,17 @@ dispatch_staller STALLER (
     .branch_solved(cdb.branch),
     .jalr_solved(cdb.jalr),
     .ifq_empty(ifq_empty),
+
+    .alu_full(alu_full),
+    .mul_full(mul_full),
+    .agu_full(agu_full),
+    .div_full(div_full),
+
+    .alu_dispatch(queue_alu_en),
+    .mul_dispatch(queue_mul_en),
+    .agu_dispatch(queue_agu_en),
+    .div_dispatch(queue_div_en),
+
     .nstall(nstall),
     .branch_add_reg_en(staller_br_addr_reg_en)
 );

@@ -5,6 +5,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	mul_div_reservation_queue
 
+} {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module dispatch_unit
+
+Top level modules:
+	dispatch_unit
+
 } {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_param.v {1 {vlog -work work -vopt -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_param.v
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module alu_param
@@ -18,13 +25,6 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 
 Top level modules:
 	frontend_tb
-
-} {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv
-Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
--- Compiling module dispatch_unit
-
-Top level modules:
-	dispatch_unit
 
 } {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/cond_ctrl.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/cond_ctrl.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
@@ -96,6 +96,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	adder_param
 
+} {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module div_unit
+
+Top level modules:
+	div_unit
+
 } {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_ctrl.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_ctrl.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module dispatch_ctrl
@@ -124,6 +131,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	imm_gen
 
+} {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/tomasulo_cpu.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/tomasulo_cpu.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module tomasulo_cpu
+
+Top level modules:
+	tomasulo_cpu
+
 } {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/memory_block.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/memory_block.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module memory_block
@@ -131,19 +145,19 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	memory_block
 
-} {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/one_hot_param.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/one_hot_param.sv
-Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
--- Compiling module one_hot_param
-
-Top level modules:
-	one_hot_param
-
 } {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_staller.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_staller.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module dispatch_staller
 
 Top level modules:
 	dispatch_staller
+
+} {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/one_hot_param.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/one_hot_param.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module one_hot_param
+
+Top level modules:
+	one_hot_param
 
 } {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_reg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_reg.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
@@ -159,6 +173,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 Top level modules:
 	tag_fifo
 
+} {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_queue.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_queue.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module agu_reservation_queue
+
+Top level modules:
+	agu_reservation_queue
+
 } {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/lru_ctrl.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/lru_ctrl.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module lru_ctrl
@@ -172,6 +193,20 @@ Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 
 Top level modules:
 	rom
+
+} {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/back_end.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/back_end.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module tomasulo_back_end_cluster
+
+Top level modules:
+	tomasulo_back_end_cluster
+
+} {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/mult_unit.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/mult_unit.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module mult_unit
+
+Top level modules:
+	mult_unit
 
 } {} {}} C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/issue_unit.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/issue_unit.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023

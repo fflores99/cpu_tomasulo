@@ -73,7 +73,7 @@ R2
 vadder_param
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/adder_param.sv
 Z9 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z10 !s110 1732928168
+Z10 !s110 1732938362
 !i10b 1
 !s100 gQ>fd`W9Cg4XHWCL1f1GD0
 Im608[A41gK2H^ZcYNAUZ42
@@ -82,23 +82,23 @@ Z11 dC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/questa
 Z12 w1732856099
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/adder_param.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/adder_param.sv
-!i122 506
+!i122 540
 L0 1 13
 Z13 VDg1SIo80bB@j0V0VzS_@n1
 Z14 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z15 !s108 1732928168.000000
+!s108 1732938361.000000
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/adder_param.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/adder_param.sv|
 !i113 0
-Z16 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z15 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R7
 vagu_reservation_reg
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_reg.sv
 R9
-Z17 !s110 1732928172
+Z16 !s110 1732938367
 !i10b 1
 !s100 QgE2H@Cl^j`hX@8YojnBC1
 IM3EXA=aDbPd>afA;kGU_c2
@@ -107,47 +107,47 @@ R11
 w1732917108
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_reg.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_reg.sv
-!i122 530
+!i122 564
 L0 1 138
 R13
 R14
 r1
 !s85 0
 31
-Z18 !s108 1732928172.000000
+Z17 !s108 1732938367.000000
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_reg.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_reg.sv|
 !i113 0
-R16
+R15
 R7
 vagu_unit
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/agu_unit.sv
 R9
-Z19 !s110 1732928173
+R16
 !i10b 1
 !s100 9n813o;mmPUkh_PLRcc>72
 Iog3mWg[QHV<fT46mdTIE@0
 S1
 R11
-w1732928165
+w1732938305
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/agu_unit.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/agu_unit.sv
-!i122 532
+!i122 566
 L0 1 29
 R13
 R14
 r1
 !s85 0
 31
-R18
+R17
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/agu_unit.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/agu_unit.sv|
 !i113 0
-R16
+R15
 R7
 valu_param
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_param.v
-R19
+R16
 !i10b 1
 !s100 ;XccTKg0_[0=6WZhh9ULD0
 IVje5g69Qm3FglZmAz]VfB1
@@ -155,14 +155,14 @@ R11
 w1710906499
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_param.v
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_param.v
-!i122 533
+!i122 567
 L0 27 136
 R13
 R14
 r1
 !s85 0
 31
-Z20 !s108 1732928173.000000
+R17
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_param.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_param.v|
 !i113 0
@@ -171,7 +171,7 @@ R7
 valu_reservation_queue
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_queue.sv
 R9
-R17
+R16
 !i10b 1
 !s100 AJmM>i`b29?[z0eM;[T=50
 Ififj=zfUHcB]n_c27IY0m3
@@ -180,23 +180,23 @@ R11
 w1732917052
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_queue.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_queue.sv
-!i122 529
+!i122 563
 L0 1 211
 R13
 R14
 r1
 !s85 0
 31
-R18
+Z18 !s108 1732938366.000000
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_queue.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/agu_queue/agu_reservation_queue.sv|
 !i113 0
-R16
+R15
 R7
 valu_reservation_reg
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/alu_queue/alu_reservation_reg.sv
 R9
-R17
+Z19 !s110 1732938366
 !i10b 1
 !s100 h1zAf;e8^@X:fc]n;kM[L3
 IHz?oT8OfBEY151;i<]Q9D3
@@ -205,23 +205,23 @@ R11
 w1732914368
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/alu_queue/alu_reservation_reg.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/alu_queue/alu_reservation_reg.sv
-!i122 526
+!i122 560
 L0 1 135
 R13
 R14
 r1
 !s85 0
 31
-Z21 !s108 1732928171.000000
+R18
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/alu_queue/alu_reservation_reg.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/alu_queue/alu_reservation_reg.sv|
 !i113 0
-R16
+R15
 R7
 valu_unit
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_unit.sv
 R9
-!s110 1732928237
+Z20 !s110 1732938368
 !i10b 1
 !s100 =HkI0fi_I=GA<z8RV``c;1
 IRM81UL^Q6aC]l@Dh`RPJb1
@@ -230,18 +230,18 @@ R11
 w1732928236
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_unit.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_unit.sv
-!i122 536
+!i122 568
 L0 1 134
 R13
 R14
 r1
 !s85 0
 31
-!s108 1732928237.000000
+Z21 !s108 1732938368.000000
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_unit.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/alu_unit.sv|
 !i113 0
-R16
+R15
 R7
 Ycdb_if
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/cdb_interface.sv
@@ -255,23 +255,48 @@ R11
 w1732919810
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/cdb_interface.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/cdb_interface.sv
-!i122 507
+!i122 541
 L0 1 0
 R13
 R14
 r1
 !s85 0
 31
-R15
+Z22 !s108 1732938362.000000
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/cdb_interface.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/cdb_interface.sv|
 !i113 0
-R16
+R15
+R7
+vcdb_slot
+2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/cdb_slot.sv
+R9
+Z23 !s110 1732938369
+!i10b 1
+!s100 7@TePTN3LEkF^UIL<GHbG1
+Ib_Fz_[807IaRn390UZnF=2
+S1
+R11
+w1732077310
+8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/cdb_slot.sv
+FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/cdb_slot.sv
+!i122 573
+L0 1 35
+R13
+R14
+r1
+!s85 0
+31
+Z24 !s108 1732938369.000000
+!s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/cdb_slot.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/cdb_slot.sv|
+!i113 0
+R15
 R7
 vcircular_buff
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/ifq/circular_buff.sv
 R9
-Z22 !s110 1732928170
+Z25 !s110 1732938365
 !i10b 1
 !s100 MP54B@fO_WShARKeDE[722
 IY4>V?c8Yf2C`0HWa@P5gW3
@@ -280,23 +305,23 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/ifq/circular_buff.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/ifq/circular_buff.sv
-!i122 520
+!i122 554
 L0 1 71
 R13
 R14
 r1
 !s85 0
 31
-Z23 !s108 1732928170.000000
+Z26 !s108 1732938365.000000
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/ifq/circular_buff.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/ifq/circular_buff.sv|
 !i113 0
-R16
+R15
 R7
 vcond_ctrl
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/cond_ctrl.sv
 R9
-R19
+R20
 !i10b 1
 !s100 ZMm<Cnn;Q1YnZBkcZlJ]i3
 IFdl4?V=2aS2KBz^;mMHPJ3
@@ -305,23 +330,23 @@ R11
 w1714878387
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/cond_ctrl.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/cond_ctrl.sv
-!i122 534
-Z24 L0 1 18
+!i122 569
+Z27 L0 1 18
 R13
 R14
 r1
 !s85 0
 31
-R20
+R21
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/cond_ctrl.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/cond_ctrl.sv|
 !i113 0
-R16
+R15
 R7
 vdispatch_ctrl
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_ctrl.sv
 R9
-Z25 !s110 1732928169
+Z28 !s110 1732938363
 !i10b 1
 !s100 i7^5gd34T<bP2kC;0B`K`3
 I@oL_Q1HOUlZ><1?_kG;gN0
@@ -330,23 +355,23 @@ R11
 w1732915262
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_ctrl.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_ctrl.sv
-!i122 512
+!i122 546
 L0 1 194
 R13
 R14
 r1
 !s85 0
 31
-Z26 !s108 1732928169.000000
+Z29 !s108 1732938363.000000
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_ctrl.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_ctrl.sv|
 !i113 0
-R16
+R15
 R7
 vdispatch_staller
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_staller.sv
 R9
-R25
+R28
 !i10b 1
 !s100 TbGQflFKN3>X1?M[YiO:j3
 I9W0U04zNVBCJbZPe?HZQB0
@@ -355,23 +380,23 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_staller.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_staller.sv
-!i122 513
+!i122 547
 L0 1 78
 R13
 R14
 r1
 !s85 0
 31
-R26
+R29
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_staller.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_staller.sv|
 !i113 0
-R16
+R15
 R7
 vdispatch_unit
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv
 R9
-R25
+R28
 !i10b 1
 !s100 DHZHURQX15i>Rm2:bFT8R3
 I^i@L;QRaDNY7PAlfk?P9N3
@@ -380,21 +405,21 @@ R11
 w1732915894
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv
-!i122 514
+!i122 548
 L0 1 401
 R13
 R14
 r1
 !s85 0
 31
-R26
+R29
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/dispatch_unit.sv|
 !i113 0
-R16
+R15
 R7
 Xdivision_unit_sv_unit
-Z27 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv
+2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv
 R9
 !s110 1732928303
 V`97El98NdPlP[NgRa?`lf3
@@ -407,22 +432,47 @@ I`97El98NdPlP[NgRa?`lf3
 S1
 R11
 w1732928301
-Z28 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv
-Z29 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv
+8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv
+FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv
 !i122 537
 L0 64 0
 R14
 31
 !s108 1732928303.000000
-Z30 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv|
-Z31 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv|
+!s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/division_unit.sv|
 !i113 0
-R16
+R15
+R7
+vdummy_pipe
+2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/dummy_pipe.sv
+R9
+R23
+!i10b 1
+!s100 iUXiQKAz9Mo5jVocRdU^83
+IJ5h_2fXl7^m?oGeO>9bk_3
+S1
+R11
+w1732149296
+8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/dummy_pipe.sv
+FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/dummy_pipe.sv
+!i122 574
+L0 1 25
+R13
+R14
+r1
+!s85 0
+31
+R24
+!s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/dummy_pipe.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/dummy_pipe.sv|
+!i113 0
+R15
 R7
 vfifo_param
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/fifo_param.sv
 R9
-R25
+Z30 !s110 1732938364
 !i10b 1
 !s100 M2NjD_MI^XmR1W8ID0FH]2
 I3lOITjeK]?2E2<0FfA]9A1
@@ -431,23 +481,23 @@ R11
 w1732863973
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/fifo_param.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/fifo_param.sv
-!i122 515
+!i122 549
 L0 1 52
 R13
 R14
 r1
 !s85 0
 31
-R26
+R29
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/fifo_param.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/fifo_param.sv|
 !i113 0
-R16
+R15
 R7
 vfrontend_tb
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/frontend_tb.sv
 R9
-Z32 !s110 1732928171
+R25
 !i10b 1
 !s100 zTzSmK9?Ge[c@Ga2Da2F@2
 I>ShgnVX^Yi>bGEQ9aM3bV1
@@ -456,23 +506,23 @@ R11
 w1732917256
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/frontend_tb.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/frontend_tb.sv
-!i122 523
+!i122 557
 L0 2 195
 R13
 R14
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/frontend_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/frontend_tb.sv|
 !i113 0
-R16
+R15
 R7
 vifq
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/ifq/ifq.sv
 R9
-R32
+R25
 !i10b 1
 !s100 QlQLCm0WXiDZ?D?K=YP_82
 IL[VYW[ZAo7i`[b_n>j;Ph3
@@ -481,23 +531,23 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/ifq/ifq.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/ifq/ifq.sv
-!i122 521
+!i122 555
 L0 1 151
 R13
 R14
 r1
 !s85 0
 31
-R23
+R26
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/ifq/ifq.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/ifq/ifq.sv|
 !i113 0
-R16
+R15
 R7
 vimm_gen
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/imm_gen.sv
 R9
-R22
+R30
 !i10b 1
 !s100 81]:8Fc@k[<]Y[=g9P^:I3
 I`ifidZWmfUoWnU20^^Q:X3
@@ -506,23 +556,23 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/imm_gen.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/imm_gen.sv
-!i122 516
+!i122 550
 L0 1 44
 R13
 R14
 r1
 !s85 0
 31
-R23
+Z31 !s108 1732938364.000000
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/imm_gen.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/imm_gen.sv|
 !i113 0
-R16
+R15
 R7
 vissue_ctrl
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/issue_ctrl.sv
 R9
-R17
+R16
 !i10b 1
 !s100 UDB`doTz[mzL_7W9Ro4_B0
 IK=?HIo5b4d`On?ffi=>G@2
@@ -531,23 +581,73 @@ R11
 w1732912395
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/issue_ctrl.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/issue_ctrl.sv
-!i122 531
+!i122 565
 L0 1 200
 R13
 R14
 r1
 !s85 0
 31
-R18
+R17
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/issue_ctrl.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/issue_ctrl.sv|
 !i113 0
-R16
+R15
+R7
+vissue_unit
+2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/issue_unit.sv
+R9
+R23
+!i10b 1
+!s100 IX:JIE?C8ZQ[j[62@cmXI1
+IKcEL[ABm[BFz>am`L;bEQ2
+S1
+R11
+w1732938304
+8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/issue_unit.sv
+FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/issue_unit.sv
+!i122 575
+L0 1 189
+R13
+R14
+r1
+!s85 0
+31
+R24
+!s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/issue_unit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/issue_unit.sv|
+!i113 0
+R15
+R7
+vlru_ctrl
+2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/lru_ctrl.sv
+R9
+R23
+!i10b 1
+!s100 M7<Cd[BdUL>i0Dj9_im5<2
+IB=E[8dReIT:k6DnVm4KUf2
+S1
+R11
+w1732149605
+8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/lru_ctrl.sv
+FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/lru_ctrl.sv
+!i122 576
+L0 1 17
+R13
+R14
+r1
+!s85 0
+31
+R24
+!s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/lru_ctrl.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_unit/lru_ctrl.sv|
+!i113 0
+R15
 R7
 vmemory_block
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/memory_block.sv
 R9
-!s110 1732928340
+R23
 !i10b 1
 !s100 di8na;Z=1goz<RgodTFX80
 ISGFBQ6cBKh6djLHHV_8g41
@@ -556,23 +656,23 @@ R11
 w1732928338
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/memory_block.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/memory_block.sv
-!i122 539
+!i122 572
 L0 4 24
 R13
 R14
 r1
 !s85 0
 31
-!s108 1732928339.000000
+R21
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/memory_block.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/memory_block.sv|
 !i113 0
-R16
+R15
 R7
 vmul_div_reservation_queue
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_queue.sv
 R9
-R17
+R19
 !i10b 1
 !s100 Pz>VodS^ICHLmf@RN7`?@0
 I6Y8m6D]JAmR5O8G<oLB?c0
@@ -581,7 +681,7 @@ R11
 w1732916956
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_queue.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_queue.sv
-!i122 527
+!i122 561
 L0 1 184
 R13
 R14
@@ -592,12 +692,12 @@ R18
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_queue.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_queue.sv|
 !i113 0
-R16
+R15
 R7
 vmul_div_reservation_reg
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_reg.sv
 R9
-R17
+R19
 !i10b 1
 !s100 EN2a8KZfQKT^Umf_7g@z23
 Ih9YSKHzgHNm8m;8MVc9Ui0
@@ -606,7 +706,7 @@ R11
 w1732917131
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_reg.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_reg.sv
-!i122 528
+!i122 562
 L0 1 131
 R13
 R14
@@ -617,32 +717,32 @@ R18
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_reg.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/issue_queue/mul_div_queue/mul_div_reservation_reg.sv|
 !i113 0
-R16
+R15
 R7
 vmult_unit
-R27
+2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/mult_unit.sv
 R9
-!s110 1732928321
+R20
 !i10b 1
-!s100 J_EOlWcQRzJ][TZO=?1fW2
-IX6;0g2kj9]SF9cV1lBmY`0
+!s100 IWbLhY?fE9Q1UQP^b:^Q01
+IVSFTYWLCH7cm:1W@84P:m1
 S1
 R11
-w1732928318
-R28
-R29
-!i122 538
-L0 1 64
+w1732920751
+8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/mult_unit.sv
+FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/mult_unit.sv
+!i122 571
+L0 1 84
 R13
 R14
 r1
 !s85 0
 31
-!s108 1732928321.000000
-R30
-R31
+R21
+!s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/mult_unit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/excecution/mult_unit.sv|
 !i113 0
-R16
+R15
 R7
 vmux_param
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/mux_param.sv
@@ -656,18 +756,18 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/mux_param.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/mux_param.sv
-!i122 508
+!i122 542
 L0 15 13
 R13
 R14
 r1
 !s85 0
 31
-R15
+R22
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/mux_param.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/mux_param.sv|
 !i113 0
-R16
+R15
 R7
 vone_hot_param
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/one_hot_param.sv
@@ -681,18 +781,18 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/one_hot_param.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/one_hot_param.sv
-!i122 509
+!i122 543
 L0 1 15
 R13
 R14
 r1
 !s85 0
 31
-R15
+R22
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/one_hot_param.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/one_hot_param.sv|
 !i113 0
-R16
+R15
 R7
 vreg_param
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/reg_param.sv
@@ -706,23 +806,23 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/reg_param.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/reg_param.sv
-!i122 510
+!i122 544
 L0 11 28
 R13
 R14
 r1
 !s85 0
 31
-R15
+R22
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/reg_param.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/reg_param.sv|
 !i113 0
-R16
+R15
 R7
 vreg_param_sync_async
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/reg_param_sync_async.sv
 R9
-R25
+R28
 !i10b 1
 !s100 MF6bW@Qhk[[nH]ddg=Adf3
 II:I@1mg11261VgLbFJakK1
@@ -731,23 +831,23 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/reg_param_sync_async.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/reg_param_sync_async.sv
-!i122 511
+!i122 545
 L0 11 31
 R13
 R14
 r1
 !s85 0
 31
-R26
+R29
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/reg_param_sync_async.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/common/reg_param_sync_async.sv|
 !i113 0
-R16
+R15
 R7
 vreg_stat_table
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/reg_stat_table.sv
 R9
-R22
+R30
 !i10b 1
 !s100 [IbYHEcz7<V>IP7z?Pd^]0
 I==8>DOSj@`bf<`o4Mj_1n3
@@ -756,23 +856,23 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/reg_stat_table.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/reg_stat_table.sv
-!i122 517
+!i122 551
 L0 1 73
 R13
 R14
 r1
 !s85 0
 31
-R23
+R31
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/reg_stat_table.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/reg_stat_table.sv|
 !i113 0
-R16
+R15
 R7
 vregister_file
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/register_file.sv
 R9
-R22
+R30
 !i10b 1
 !s100 0`2j>4B>hhJE0UY2DCWUK3
 IO24;Ag6;ne=XzY`fVF5gO2
@@ -781,23 +881,23 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/register_file.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/register_file.sv
-!i122 518
+!i122 552
 L0 1 57
 R13
 R14
 r1
 !s85 0
 31
-R23
+R31
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/register_file.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/register_file.sv|
 !i113 0
-R16
+R15
 R7
 vrom
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv
 R9
-R32
+R19
 !i10b 1
 !s100 0DKeOHc`<Vj22Aa?aDjfd0
 I?G@KMK@j]AS:n[5<TOM:_2
@@ -806,23 +906,23 @@ R11
 w1732903646
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv
-!i122 524
-R24
+!i122 558
+R27
 R13
 R14
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv|
 !i113 0
-R16
+R15
 R7
 vtag_fifo
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/tag_fifo.sv
 R9
-R22
+R30
 !i10b 1
 !s100 KAe9IX6Q4mli<FPgn_6J41
 InCz@69YSO9kjS431ClkXA0
@@ -831,23 +931,23 @@ R11
 R12
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/tag_fifo.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/tag_fifo.sv
-!i122 519
+!i122 553
 L0 1 50
 R13
 R14
 r1
 !s85 0
 31
-R23
+R31
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/tag_fifo.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/dispatch_unit/tag_fifo.sv|
 !i113 0
-R16
+R15
 R7
 vtomasulo_front_end_cluster
 2C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/front_end.sv
 R9
-R32
+R25
 !i10b 1
 !s100 N705c:jOSb1kN5CIa46U42
 I@LWMX1nXBNEJ0WcWoSOB23
@@ -856,16 +956,16 @@ R11
 w1732917327
 8C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/front_end.sv
 FC:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/front_end.sv
-!i122 522
+!i122 556
 L0 1 103
 R13
 R14
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/front_end.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/front_end.sv|
 !i113 0
-R16
+R15
 R7

@@ -883,3 +883,78 @@ restart
 quit -sim
 # End time: 15:55:53 on Nov 29,2024, Elapsed time: 0:01:15
 # Errors: 0, Warnings: 2
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv failed with 1 errors.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv failed with 2 errors.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv failed with 5 errors.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv failed with 1 errors.
+# 33 compiles, 4 failed with 9 errors.
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv failed with 2 errors.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv failed with 5 errors.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv failed with 1 errors.
+# 33 compiles, 3 failed with 8 errors.
+# Compile of alu_unit.sv failed with 28 errors.
+# Compile of alu_unit.sv was successful.
+# Compile of division_unit.sv failed with 1 errors.
+# Compile of division_unit.sv failed with 2 errors.
+# Compile of division_unit.sv was successful with warnings.
+# Compile of division_unit.sv was successful.
+# Compile of memory_block.sv was successful.

@@ -1,4 +1,4 @@
-module alu_reservation_queue
+module agu_reservation_queue
 (
     input clk,
     input rst,

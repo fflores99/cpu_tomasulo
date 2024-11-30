@@ -1,4 +1,4 @@
-module mult_unit (
+module div_unit (
     input clk,
     input rst,
 

@@ -10,11 +10,7 @@ module mult_unit (
     input tag_in_valid,
     output [31:0] res,
     output [5:0] tag_out,
-    output tag_out_valid,
-    output branch,
-    output branch_taken,
-    output jalr,
-    output store_pc
+    output tag_out_valid
 );
 
 assign branch = 1'b0;
@@ -31,12 +27,6 @@ wire tag_out_valid_reg[3];
 
 assign tag_out_reg[0] = (queue_en) ? tag_in : 6'd0;
 assign tag_out_valid_reg[0] = (queue_en) ? tag_in_valid : 1'b0;
-
-
-assign branch = 1'b0;
-assign branch_taken = 1'b0;
-assign jalr = 1'b0; 
-assign store_pc = 1'b0;
 
 assign mult_res = op1 * op2;
 

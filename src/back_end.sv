@@ -47,7 +47,7 @@ module tomasulo_back_end_cluster (
 wire alu_done, alu_issue, alu_rd_tag_valid, alu_issue_tag_valid;
 wire alu_branch, alu_branch_taken, alu_jalr, alu_write_pc;
 wire [31:0] alu_op1, alu_op2, alu_res;
-wire [6:0] alu_rd_rtag, alu_issue_tag;
+wire [5:0] alu_rd_rtag, alu_issue_tag;
 wire [2:0] alu_op_ext, alu_funct3;
 
 alu_reservation_queue ALU_QUEUE
@@ -90,7 +90,7 @@ alu_reservation_queue ALU_QUEUE
 );
 
 /*ALU excecution unit*/
-alu_unit (
+alu_unit ALU_EX (
     .op1(alu_op1),
     .op2(alu_op2),
     .alu_ext(alu_op_ext),
@@ -109,7 +109,7 @@ alu_unit (
 /*Mult queue*/
 wire mul_done, mul_issue, mul_rd_tag_valid, mul_issue_tag_valid;
 wire [31:0] mul_op1, mul_op2, mul_res;
-wire [6:0] mul_rd_rtag, mul_issue_tag;
+wire [5:0] mul_rd_rtag, mul_issue_tag;
 wire [2:0] mul_funct3;
 
 mul_div_reservation_queue MUL_QUEUE
@@ -169,7 +169,7 @@ mult_unit MULT_UNIT (
 wire div_done, div_issue, div_rd_tag_valid, div_issue_tag_valid;
 wire div_busy;
 wire [31:0] div_op1, div_op2, div_res;
-wire [6:0] div_rd_rtag, div_issue_tag;
+wire [5:0] div_rd_rtag, div_issue_tag;
 wire [2:0] div_funct3;
 
 mul_div_reservation_queue DIV_QUEUE
@@ -228,7 +228,7 @@ div_unit DIV_UNIT (
 /*Memory Unit QUEUE*/
 wire agu_done, agu_issue, agu_rd_tag_valid, agu_issue_tag_valid, agu_ls;
 wire [31:0] agu_adress, agu_mem_data, agu_res;
-wire [6:0] agu_rd_rtag, agu_issue_tag;
+wire [5:0] agu_rd_rtag, agu_issue_tag;
 wire [2:0] agu_funct3;
 agu_reservation_queue AGU_QUEUE
 (
@@ -312,7 +312,7 @@ issue_unit ISSUE (
     /*Div queue*/
     .div_ready(div_issue),
     .div_busy(div_busy),
-    .div_result(div_result),
+    .div_result(div_res),
     .div_tag(div_issue_tag),
     .div_done(div_done),
     /*mem if*/

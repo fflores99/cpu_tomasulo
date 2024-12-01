@@ -3,7 +3,7 @@ module tomasulo_cpu (
     input rst,
 
     output [31:0] p_mem_add,
-    input [31:0] p_mem_data,
+    input [127:0] p_mem_data,
 
     output [31:0] d_mem_add,
     output d_mem_we,
@@ -13,10 +13,8 @@ module tomasulo_cpu (
 
 
     /*****Memory Interface*****/
-    wire [127:0] mem_data;
     wire abort;
     wire m_rd_en;
-    wire [31:0] mem_addr;
     /*****Backend interface*****/
     wire [31:0] queue_op1_data;
     wire [5:0] queue_op1_tag;
@@ -44,14 +42,14 @@ module tomasulo_cpu (
     wire alu_full, agu_full, div_full, mul_full;
     cdb_if cdb();
 
-    tomasulo_front_end_cluster UUT (
+    tomasulo_front_end_cluster FRONTEND (
         .clk(clk),
         .rst(rst),
         .d_valid(1'b1),
-        .mem_data(mem_data),
+        .mem_data(p_mem_data),
         .abort(abort),
         .m_rd_en(m_rd_en),
-        .mem_addr(mem_addr),
+        .mem_addr(p_mem_add),
         .queue_op1_data(queue_op1_data),
         .queue_op1_tag(queue_op1_tag),
         .queue_op1_data_valid(queue_op1_data_valid),
@@ -82,7 +80,7 @@ module tomasulo_cpu (
         .cdb(cdb)
     );
 
-tomasulo_back_end_cluster (
+tomasulo_back_end_cluster BACKEND (
     .clk(clk),
     .rst(rst),
     /*****Backend interface*****/

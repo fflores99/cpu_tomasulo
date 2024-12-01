@@ -7,6 +7,7 @@ module issue_ctrl #(parameter DEPTH = 4) (
     input op2_data_valid[DEPTH], /*op2 data valid from each register*/
     input valid[DEPTH], /*RD valid from each register used to track if instruction in register is a valid instruction*/
     input ready[DEPTH],
+    input entry_valid[DEPTH],
     /*interface inputs*/
     input queue_en, /*queue enebale from dispatch*/
     input ex_done, /*Excecute done from Excecution Unit*/
@@ -21,6 +22,7 @@ module issue_ctrl #(parameter DEPTH = 4) (
     output reg updt_cmn[DEPTH],
     /*Register control*/
     output reg reg_we[DEPTH], /*Enable for registers*/
+    output reg flush[DEPTH],
     /*Output control*/
     output reg [1:0] output_selector, /*Selector for output mux, also used to track which register is being output*/
     /*Back pressure*/
@@ -40,7 +42,7 @@ reg reg_shift[DEPTH], reg_updt_op1[DEPTH], reg_updt_op2[DEPTH];
 always_comb begin : status_decoder
     integer i;
     for (i = 0; i < DEPTH; i++) begin
-        if(valid[i]) begin
+        if(entry_valid[i]) begin
             /*Register is not empty*/
             if(ready[i]) begin
                 /*Register is ready to be issued*/
@@ -116,85 +118,76 @@ always_comb begin : updt_ctrl
     /*A register is updated if CDB publishes its dependency*/
     integer i;
     for (i = 0; i < DEPTH; i += 1) begin
-        if(cdb_data_valid == 1'b1 && cdb_tag == op1_tag[i] && op1_data_valid[i] == 1'b0)
+        if(cdb_data_valid == 1'b1 && cdb_tag == op1_tag[i] && op1_data_valid[i] == 1'b0 && entry_valid[i] == 1'b1)
             reg_updt_op1[i] = 1'b1;
         else
             reg_updt_op1[i] = 1'b0;
         
-        if(cdb_data_valid == 1'b1 && cdb_tag == op2_tag[i] && op2_data_valid[i] == 1'b0)
+        if(cdb_data_valid == 1'b1 && cdb_tag == op2_tag[i] && op2_data_valid[i] == 1'b0 && entry_valid[i] == 1'b1)
             reg_updt_op2[i] = 1'b1;
         else
             reg_updt_op2[i] = 1'b0;
     end
 end
 
-/*Update selector*/
 always_comb begin : update_selector
     integer i;
     for (i = 0; i < DEPTH; i += 1) begin
-        if(queue_en == 1'b0) begin
-            /*If queue is not enabled, all control signals are disabled*/
-            reg_we[i] = 1'b0;
-            updt_cmn[i] = 1'b0;
-            op1_updt_en[i] = 1'b0;
-            op2_updt_en[i] = 1'b0;
-            op1_updt_from_cdb[i] = 1'b0;
-            op2_updt_from_cdb[i] = 1'b0;    
-        end
-        else if(reg_shift[i] == 1'b1) begin
-            /*Reg i is requesting data from reg i-1*/
-            /*All register is enabled for writting*/
-            op1_updt_en[i] = 1'b1;
-            op2_updt_en[i] = 1'b1;
-            reg_we[i] = 1'b1;
-            updt_cmn[i] = 1'b1;
+        if(reg_shift[i] == 1'b1) begin
             if(i == 0) begin
-                /*register 0 is all updated using dispatch */
-                op1_updt_from_cdb[i] = 1'b0;
-                op2_updt_from_cdb[i] = 1'b0;    
-            end
-            else begin
-                /*Registers other than 0*/
-                /*Compares with prev register operation*/
-                if(reg_updt_op1[i-1] == 1'b1)
-                /*Update op1 with CDB*/
-                    op1_updt_from_cdb[i] = 1'b1;
-                else
-                /*Update from previous*/
+                if(queue_en == 1'b0)  begin
+                    /*Register 0 is sending is requesting new data, but queeue is not eneabled*/
+                    reg_we[i] = 1'b0;
+                    updt_cmn[i] = 1'b0;
+                    op1_updt_en[i] = 1'b0;
+                    op2_updt_en[i] = 1'b0;
                     op1_updt_from_cdb[i] = 1'b0;
+                    op2_updt_from_cdb[i] = 1'b0; 
+                    flush[i] = 1'b1;
+                end else begin
+                    flush[i] = 1'b0;
+                    reg_we[i] = 1'b1;
+                    updt_cmn[i] = 1'b1;
+                    op1_updt_en[i] = 1'b1;
+                    op2_updt_en[i] = 1'b1;
+                    op1_updt_from_cdb[i] = 1'b0;
+                    op2_updt_from_cdb[i] = 1'b0; 
+                end
+            end else begin
+                /*Registers other than 0*/
+                if ((output_selector == (i[1:0] - 1)) && (issue_valid == 1'b1) && (ex_done == 1'b1)) begin
+                    /*Previous register is being published*/
+                    reg_we[i] = 1'b0;
+                    updt_cmn[i] = 1'b0;
+                    op1_updt_en[i] = 1'b0;
+                    op2_updt_en[i] = 1'b0;
+                    op1_updt_from_cdb[i] = 1'b0;
+                    op2_updt_from_cdb[i] = 1'b0; 
+                    flush[i] = 1'b1;
+                end else begin
+                    op1_updt_en[i] = 1'b1;
+                    op2_updt_en[i] = 1'b1;
+                    reg_we[i] = 1'b1;
+                    updt_cmn[i] = 1'b1;
+                    flush[i] = 1'b0;
+                    /*Compares with prev register operation*/
+                    if(reg_updt_op1[i-1] == 1'b1)
+                    /*Update op1 with CDB*/
+                        op1_updt_from_cdb[i] = 1'b1;
+                    else
+                    /*Update from previous*/
+                        op1_updt_from_cdb[i] = 1'b0;
 
-                if(reg_updt_op2[i-1] == 1'b1)
-                /*Update op2 with CDB*/
-                    op2_updt_from_cdb[i] = 1'b1;
-                else
-                /*Update from previous*/
-                    op2_updt_from_cdb[i] = 1'b0;
+                    if(reg_updt_op2[i-1] == 1'b1)
+                    /*Update op2 with CDB*/
+                        op2_updt_from_cdb[i] = 1'b1;
+                    else
+                    /*Update from previous*/
+                        op2_updt_from_cdb[i] = 1'b0;
+                end
             end
-        end
-        else begin
-            /*Reg i is not requesting data from reg i-1*/
-            updt_cmn[i] = 1'b0;
-            /*Enables writting if there is an update*/
-            reg_we[i] = reg_updt_op1[i] | reg_updt_op2[i];
-            /*Selects data from cdb*/
-            op1_updt_from_cdb[i] = 1'b1;
-            op2_updt_from_cdb[i] = 1'b1;
-            if(reg_updt_op1[i] == 1'b1)
-            /*Update op1*/
-                op1_updt_en[i] = 1'b1;               
-            else
-            /*No update*/
-                op1_updt_en[i] = 1'b0;
-
-            if(reg_updt_op2[i] == 1'b1)
-            /*Update op2*/
-                op2_updt_en[i] = 1'b1; 
-            else
-            /*No update*/
-                op2_updt_en[i] = 1'b0; 
         end
     end
-
-
 end
+
 endmodule

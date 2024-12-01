@@ -2,6 +2,7 @@ module mul_div_reservation_reg
 (
     input clk,
     input rst,
+    input flush,
     /*control signals*/
     input we,
     input updt_cmn_block,
@@ -11,6 +12,7 @@ module mul_div_reservation_reg
     input updt_op2_from_cdb,
     /*****From upper register*****/
     /*Operand1*/
+    input reg_valid_in,
     input [31:0] queue_op1_data_in,
     input [5:0] queue_op1_tag_in,
     input queue_op1_data_valid_in,
@@ -28,6 +30,7 @@ module mul_div_reservation_reg
     input [31:0] cdb_data,
     /*****To next register*****/
     /*Operand1*/
+    output reg_valid_out,
     output [31:0] queue_op1_data_out,
     output [5:0] queue_op1_tag_out,
     output queue_op1_data_valid_out,
@@ -56,12 +59,12 @@ assign op1_data_to_reg = (updt_op1_from_cdb) ? cdb_data : queue_op1_data_in;
 assign op1_data_valid_to_reg = (updt_op1_from_cdb) ? cdb_data_valid : queue_op1_data_valid_in;
 
 /* if operand 2 is uptated from cdb, selects CDB data, if not, selects prev op2 data*/
-assign op2_data_to_reg = (updt_op2_from_cdb) ? cdb_data : queue_bus_in.op2_data;
+assign op2_data_to_reg = (updt_op2_from_cdb) ? cdb_data : queue_op2_data_in;
 /* updates data valid of operand 1 if it is being updated by cdb, if not, uses previous data valid*/
-assign op2_data_valid_to_reg = (updt_op2_from_cdb) ? cdb_data_valid : queue_bus_in.op2_data_valid;
+assign op2_data_valid_to_reg = (updt_op2_from_cdb) ? cdb_data_valid : queue_op2_data_valid_in;
 
 /*Operand 1 Register (op1 data + data valid)*/
-reg_param #(
+reg_param_sync_async #(
 	.LENGTH(33),
 	.RESET_VALUE(33'd0)
 )
@@ -69,6 +72,7 @@ OP1_REG
 (
 	.clk(clk),
 	.en(we & updt_op1),
+    .flush(flush),
 	.rst(rst),
 	.DATA_IN({op1_data_to_reg,
             op1_data_valid_to_reg}),
@@ -77,7 +81,7 @@ OP1_REG
 );
 
 /*Operand 2 Register (op2 data + data valid)*/
-reg_param #(
+reg_param_sync_async #(
 	.LENGTH(33),
 	.RESET_VALUE(33'd0)
 )
@@ -85,6 +89,7 @@ OP2_REG
 (
 	.clk(clk),
 	.en(we & updt_op1),
+    .flush(flush),
 	.rst(rst),
 	.DATA_IN({op2_data_to_reg,
             op2_data_valid_to_reg}),
@@ -93,21 +98,24 @@ OP2_REG
 );
 
 /*Common register*/
-reg_param #(
-	.LENGTH(22),
-	.RESET_VALUE(25'd0)
+reg_param_sync_async #(
+	.LENGTH(23),
+	.RESET_VALUE(23'd0)
 )
 CMN_REG
 (
 	.clk(clk),
 	.en(we & updt_cmn_block),
+    .flush(flush),
 	.rst(rst),
-	.DATA_IN({queue_op1_tag_in, //6
+	.DATA_IN({reg_valid_in,
+            queue_op1_tag_in, //6
             queue_op2_tag_in, //6
             queue_rd_tag_in, //6
             queue_rd_tag_valid_in, //1
             queue_funct3_in}), //3 total = 22
-	.DATA_OUT({queue_op1_tag_out,
+	.DATA_OUT({reg_valid_out,
+            queue_op1_tag_out,
             queue_op2_tag_out,
             queue_rd_tag_out,
             queue_rd_tag_valid_out,
@@ -115,7 +123,7 @@ CMN_REG
 );
 
 /*Ready register*/
-reg_param #(
+reg_param_sync_async #(
 	.LENGTH(1),
 	.RESET_VALUE(1'd0)
 )
@@ -123,8 +131,9 @@ READY_REG
 (
 	.clk(clk),
 	.en(we),
+    .flush(flush),
 	.rst(rst),
-	.DATA_IN(((op1_data_valid_to_reg & updt_op1) | op1_data_valid_out) & ((op2_data_valid_to_reg & updt_op2)  | op2_data_valid_out)),
+	.DATA_IN(((op1_data_valid_to_reg & updt_op1) | queue_op1_data_valid_out) & ((op2_data_valid_to_reg & updt_op2)  | queue_op2_data_valid_out)),
 	.DATA_OUT(ready)
 );
 

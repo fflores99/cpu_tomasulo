@@ -18,7 +18,7 @@ module agu_unit (
     input [31:0] mem_data_r
 );
 
-assign mem_we = ls & agu_issue;
+assign mem_we = ls;
 assign mem_addr = addr;
 assign mem_data_w = data_in;
 assign data_out = mem_data_r;

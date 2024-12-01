@@ -10,7 +10,9 @@ reg [WIDTH - 1:0] pipe [DEPTH];
 always_ff @( posedge clk, posedge rst ) begin : pipeline
     integer i;
     if(rst) begin
-        pipe[DEPTH-1] <= {WIDTH{1'b0}};
+        for(i=0; i < DEPTH; i=i+1) begin
+            pipe[i] <= {WIDTH{1'b0}};
+        end
     end
     else begin
         pipe[DEPTH - 1] <= pipe_in;

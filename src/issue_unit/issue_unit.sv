@@ -145,7 +145,7 @@ always_comb begin : cdb_mux_sel
         cdb.branch = int_branch;
         cdb.branch_taken = int_branch_taken;
         cdb.jalr = int_jalr;
-        cdb.valid = int_cdb_valid & cdb.valid;
+        cdb.valid = int_cdb_valid;
         cdb.store_pc = int_write_pc;
     end else if(issue_ld) begin
         mux_sel = 2'b01;
@@ -181,7 +181,7 @@ always_comb begin : cdb_mux_sel
         cdb.branch = 1'b0;
         cdb.branch_taken = 1'b0;
         cdb.jalr = 1'b0;
-        cdb.valid = 1'b1;
+        cdb.valid = 1'b0;
         cdb.store_pc = 1'b0;  
     end
 end

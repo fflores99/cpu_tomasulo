@@ -61,7 +61,7 @@ always_comb begin : alu_ctrl
 end
 
 /*Branch taken comparator*/
-cond_ctrl (
+cond_ctrl COND_DEC (
     .funct3(funct3),
     .z(z),
     .n(n),

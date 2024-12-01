@@ -69,6 +69,9 @@ wire [2:0] queue_funct3_arr[4];
 wire queue_agu_ls_arr[4];
 wire [31:0] queue_agu_imm_arr[4];
 
+wire flush_reg[4];
+wire entry_valid[4];
+
 /***************************************************
 * REG TO CTRL VALID FLAG                           *
 ***************************************************/
@@ -84,6 +87,7 @@ issue_ctrl #(.DEPTH(4)) AGU_ISSUE_CTRL (
     .op2_tag(queue_op2_tag_arr), /*op2 tag from each register*/
     .op2_data_valid(queue_op2_data_valid_arr), /*op2 data valid from each register*/
     .valid(valid_arr), /*RD valid from each register used to track if instruction in register is a valid instruction*/
+    .entry_valid(entry_valid),
     .ready(ready_arr),
     .queue_en(queue_en), /*queue enebale from dispatch*/
     .ex_done(ex_done), /*Excecute done from Excecution Unit*/
@@ -95,6 +99,7 @@ issue_ctrl #(.DEPTH(4)) AGU_ISSUE_CTRL (
     .op2_updt_from_cdb(op2_updt_from_cdb_arr),
     .updt_cmn(updt_cmn_arr),
     .reg_we(reg_we_arr), /*Enable for registers*/
+    .flush(flush_reg),
     .output_selector(output_selector), /*Selector for output mux, also used to track which register is being output*/
     .queue_full(queue_full), /*Queue full indicator*/
     .issue_valid(issue_valid) /*Issue valid bit to indicate excecution unit that data output is valid*/
@@ -105,12 +110,14 @@ agu_reservation_reg RES_REG0
 (
     .clk(clk),
     .rst(rst),
+    .flush(flush_reg[0]),
     .we(reg_we_arr[0]),
     .updt_cmn_block(updt_cmn_arr[0]),
     .updt_op1(op1_updt_en_arr[0]),
     .updt_op1_from_cdb(op1_updt_from_cdb_arr[0]),
     .updt_op2(op2_updt_en_arr[0]),
-    .updt_op2_from_cdb(op1_updt_from_cdb_arr[0]),
+    .updt_op2_from_cdb(op2_updt_from_cdb_arr[0]),
+    .reg_valid_in(queue_en),
     .queue_op1_data_in(queue_op1_data_in),
     .queue_op1_tag_in(queue_op1_tag_in),
     .queue_op1_data_valid_in(queue_op1_data_valid_in),
@@ -124,6 +131,7 @@ agu_reservation_reg RES_REG0
     .queue_agu_imm_in(queue_agu_imm_in),
     .cdb_data_valid(cdb.valid),
     .cdb_data(cdb.data),
+    .reg_valid_out(entry_valid[0]),
     .queue_op1_data_out(queue_op1_data_arr[0]),
     .queue_op1_tag_out(queue_op1_tag_arr[0]),
     .queue_op1_data_valid_out(queue_op1_data_valid_arr[0]),
@@ -145,12 +153,14 @@ generate
     (
         .clk(clk),
         .rst(rst),
+        .flush(flush_reg[i]),
         .we(reg_we_arr[i]),
         .updt_cmn_block(updt_cmn_arr[i]),
         .updt_op1(op1_updt_en_arr[i]),
         .updt_op1_from_cdb(op1_updt_from_cdb_arr[i]),
         .updt_op2(op2_updt_en_arr[i]),
-        .updt_op2_from_cdb(op1_updt_from_cdb_arr[i]),
+        .updt_op2_from_cdb(op2_updt_from_cdb_arr[i]),
+        .reg_valid_in(entry_valid[i-1]),
         .queue_op1_data_in(queue_op1_data_arr[i-1]),
         .queue_op1_tag_in(queue_op1_tag_arr[i-1]),
         .queue_op1_data_valid_in(queue_op1_data_valid_arr[i-1]),
@@ -164,6 +174,7 @@ generate
         .queue_agu_imm_in(queue_agu_imm_arr[i-1]),
         .cdb_data_valid(cdb.valid),
         .cdb_data(cdb.data),
+        .reg_valid_out(entry_valid[i]),
         .queue_op1_data_out(queue_op1_data_arr[i]),
         .queue_op1_tag_out(queue_op1_tag_arr[i]),
         .queue_op1_data_valid_out(queue_op1_data_valid_arr[i]),
@@ -187,6 +198,7 @@ mux_param #(
     .WIDTH(107),
     .N(4)
 )
+AGU_CDB_MUX
 (
     .X('{{queue_op1_data_arr[3],queue_op2_data_arr[3],queue_agu_imm_arr[3],queue_agu_ls_arr[3], queue_funct3_arr[3],queue_rd_tag_arr[3],queue_rd_tag_valid_arr[3]},
     {queue_op1_data_arr[2],queue_op2_data_arr[2],queue_agu_imm_arr[2],queue_agu_ls_arr[2], queue_funct3_arr[2],queue_rd_tag_arr[2],queue_rd_tag_valid_arr[2]},
@@ -204,7 +216,7 @@ ADRR_GEN
     .A(queue_op1_data_out),
     .B(queue_agu_imm_out),
     .S(ex_address),
-    .c()
+    .carry()
 );
 
 assign ex_data = queue_op2_data_out;

@@ -257,7 +257,7 @@ agu_reservation_queue AGU_QUEUE
     /*****CDB*****/
     .cdb(cdb),
     /*****To excecution unit*****/
-    .ex_done(agu_done),
+    .ex_done(agu_done | mem_we),
     .issue_valid(agu_issue),
     /*Operand1*/
     .ex_address(agu_adress),
@@ -316,7 +316,7 @@ issue_unit ISSUE (
     .div_tag(div_issue_tag),
     .div_done(div_done),
     /*mem if*/
-    .ls_ready(agu_issue_tag_valid),
+    .ls_ready(agu_issue & agu_issue_tag_valid),
     .load_data(agu_res),
     .load_tag(agu_issue_tag),
     .ls_done(agu_done),

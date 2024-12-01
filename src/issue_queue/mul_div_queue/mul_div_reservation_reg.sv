@@ -88,7 +88,7 @@ reg_param_sync_async #(
 OP2_REG
 (
 	.clk(clk),
-	.en(we & updt_op1),
+	.en(we & updt_op2),
     .flush(flush),
 	.rst(rst),
 	.DATA_IN({op2_data_to_reg,

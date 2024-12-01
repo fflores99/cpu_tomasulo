@@ -5157,3 +5157,4541 @@ restart
 run
 run
 run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+add wave -position insertpoint sim:/cpu_tb/CPU/FRONTEND/cdb/*
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/REG_FILE/REG_OUT_ARRAY
+add wave -position insertpoint  \
+sim:/cpu_tb/RAM/DATA_MEM
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+run
+# ** Warning: (vsim-7) Failed to open readmem file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/beginbubble_selection_sort.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+# ** Error (suppressible): (vsim-12003) Variable '/cpu_tb/RAM/DATA_MEM' written by continuous and procedural assignments. See C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/memory_block.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb File: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/cpu_tb.sv Line: 34
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 08:58:23 on Nov 30,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: frfdm  Hostname: FAFILAPTOP  ProcessID: 1716
+#           Attempting to use alternate WLF file "./wlft7hc3k0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft7hc3k0
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/AGU/data_out
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+add wave -position insertpoint sim:/cpu_tb/CPU/BACKEND/AGU/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+add wave -position insertpoint sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+add wave -position 25  sim:/cpu_tb/CPU/FRONTEND/queue_agu_en
+add wave -position 26  sim:/cpu_tb/CPU/FRONTEND/queue_agu_ls
+add wave -position 27  sim:/cpu_tb/CPU/FRONTEND/queue_agu_imm
+add wave -position 28  sim:/cpu_tb/CPU/FRONTEND/queue_op1_data
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/rs1_reg_data
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+add wave -position 3  sim:/cpu_tb/RAM/ADD
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+add wave -position insertpoint sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/AGU_ISSUE_CTRL/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/AGU_ISSUE_CTRL/op1_updt_en
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/AGU_ISSUE_CTRL/op1_updt_from_cdb
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/AGU_ISSUE_CTRL/op2_updt_en
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/AGU_ISSUE_CTRL/op2_updt_from_cdb
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/AGU_ISSUE_CTRL/updt_cmn
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/FIFO/fifo_data
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/FIFO/read_ptr
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/FIFO/write_ptr
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/FIFO/fifo_full
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/FIFO/fifo_empty
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv failed with 2 errors.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 1 failed with 2 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv failed with 5 errors.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 1 failed with 5 errors.
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful with warnings.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 113 of file "C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt". (Current address [112], address range [0:111])    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful with warnings.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv failed with 2 errors.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 1 failed with 2 errors.
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv failed with 2 errors.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 1 failed with 2 errors.
+# Compile of tag_fifo.sv failed with 2 errors.
+# Compile of tag_fifo.sv was successful.
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+add wave -position 4  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/alu_full
+add wave -position 5  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/mul_full
+add wave -position 6  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/agu_full
+add wave -position 7  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/div_full
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/ready_arr
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/flush_reg
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/ex_done
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/issue_valid
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/output_selector
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/AGU_ISSUE_CTRL/reg_shift
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv failed with 1 errors.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 1 failed with 1 error.
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+run
+run
+run
+run
+run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/FRONTEND/queue_rd_tag
+add wave -position 9  sim:/cpu_tb/CPU/FRONTEND/queue_rd_tag_valid
+add wave -position 10  sim:/cpu_tb/CPU/FRONTEND/queue_op1_data
+add wave -position 11  sim:/cpu_tb/CPU/FRONTEND/queue_op1_tag
+add wave -position 12  sim:/cpu_tb/CPU/FRONTEND/queue_op1_data_valid
+add wave -position insertpoint sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op1_data_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op1_data_in
+add wave -position 100  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op1_data_in
+add wave -position 100  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/RES_REG0/queue_op1_data_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[3]/RES_REG/queue_rd_tag_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[2]/RES_REG/queue_rd_tag_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[2]/RES_REG/ready
+add wave -position 101  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[3]/RES_REG/ready
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_EX/res
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/int_ready
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/ls_ready
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/int_done
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/ls_done
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/lru_bit
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/flush_reg
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/ALU_ISSUE_CTRL/reg_shift
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/output_selector
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/ALU_ISSUE_CTRL/REG_STATUS
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/entry_valid
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[3]/RES_REG/updt_cmn_block
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position 13  sim:/cpu_tb/CPU/BACKEND/queue_agu_full
+add wave -position insertpoint sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/AGU_ISSUE_CTRL/*
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/ISSUE/ls_done
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+run
+add wave -position 15  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_full
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/ALU_EX/branch
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/ALU_EX/branch_taken
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+add wave -position insertpoint  \
+{sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[3]/RES_REG/queue_alu_ext_out}
+add wave -position insertpoint  \
+{sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[2]/RES_REG/queue_alu_ext_out}
+add wave -position insertpoint  \
+{sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[1]/RES_REG/queue_alu_ext_out}
+add wave -position insertpoint  \
+sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/RES_REG0/queue_alu_ext_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op1_data_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op1_tag_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op1_data_valid_in
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/nstall
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/STALLER/state
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[3]/RES_REG/queue_rd_tag_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[3]/RES_REG/queue_op1_tag_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[2]/RES_REG/updt_op1
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[2]/RES_REG/queue_op1_tag_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[1]/RES_REG/queue_op1_tag_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[1]/RES_REG/queue_op1_tag_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/RES_REG0/queue_op1_tag_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/RES_REG0/queue_op2_tag_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[1]/RES_REG/queue_op2_tag_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[2]/RES_REG/queue_op2_tag_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[3]/RES_REG/queue_op2_tag_out
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position 36  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op1_data_in
+add wave -position 37  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op1_data_valid_in
+add wave -position 38  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op2_data_in
+add wave -position 39  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op2_data_valid_in
+add wave -position 39  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op2_tag_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/ready_arr
+add wave -position 37  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/queue_op1_tag_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/int_done
+add wave -position 45  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/reg_station[3]/RES_REG/ready
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[3]/RES_REG/queue_op1_data_valid_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[3]/RES_REG/queue_op2_data_valid_out
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/op1_updt_from_cdb_arr
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/reg_station[3]/RES_REG/queue_rd_tag_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ALU_QUEUE/ALU_ISSUE_CTRL/reg_shift
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+run
+run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/queue_op1_data_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/queue_op1_tag_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/queue_op1_data_valid_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/queue_op2_data_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/queue_op2_tag_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/queue_op2_data_valid_in
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/ready_arr
+add wave -position end  sim:/cpu_tb/RAM/we
+add wave -position 47  sim:/cpu_tb/CPU/BACKEND/ISSUE/ls_done
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/ls_ready
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/issue_valid
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+run
+add wave -position 13  sim:/cpu_tb/RAM/clk
+add wave -position 14  sim:/cpu_tb/RAM/ADD
+add wave -position 15  sim:/cpu_tb/RAM/we
+add wave -position 16  sim:/cpu_tb/RAM/DW
+add wave -position 17  sim:/cpu_tb/RAM/DR
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/IFQ/BUFF_OUT
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+run
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/IFQ/BUFF/BUFF_DAT
+add wave -position 29  sim:/cpu_tb/CPU/FRONTEND/IFQ/pc_out
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/queue_op1_data
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/queue_op1_tag
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/queue_op1_data_valid
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/queue_op2_data
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/queue_op2_tag
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/queue_op2_data_valid
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/queue_rd_tag
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/queue_rd_tag_valid
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/alu_en
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/agu_en
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/mul_en
+add wave -position end  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/div_en
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv failed with 3 errors.
+# 40 compiles, 1 failed with 3 errors.
+# Compile of cpu_tb.sv failed with 3 errors.
+# Compile of cpu_tb.sv failed with 2 errors.
+# Compile of cpu_tb.sv was successful.
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum int cpu_tb.<enum#1>' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb File: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/cpu_tb.sv Line: 73
+add wave -position end  sim:/cpu_tb/cdb_queue_type
+run
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/int_result
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/mult_result
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/div_result
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/load_data
+add wave -position end  sim:/cpu_tb/CPU/BACKEND/ISSUE/lru_bit
+add wave -position 45  sim:/cpu_tb/CPU/BACKEND/ISSUE/int_branch
+add wave -position 46  sim:/cpu_tb/CPU/BACKEND/ISSUE/int_branch_taken
+add wave -position 43  sim:/cpu_tb/CPU/FRONTEND/DPCH_UNIT/STALLER/state
+add wave -position 50  sim:/cpu_tb/CPU/BACKEND/AGU_QUEUE/ex_address
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum int cpu_tb.<enum#1>' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb File: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/cpu_tb.sv Line: 73
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/do/cpu_sim.do

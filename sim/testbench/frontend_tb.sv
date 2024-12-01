@@ -35,8 +35,9 @@ module frontend_tb ();
     wire queue_div_en;
     cdb_if cdb();
 
+
     rom #(
-    .SIZE(128)
+    .SIZE(448)
     ) 
     PMEM 
     (

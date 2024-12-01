@@ -2,6 +2,8 @@
 
 module cpu_tb ();
     
+    enum { ALU, AGU, MUL, DIV } cdb_queue_type;
+
     reg clk, rst;
 
     wire [31:0] pmem_addr;
@@ -9,14 +11,16 @@ module cpu_tb ();
     wire [31:0] dmem_addr, dmem_data_r, dmem_data_w;
     wire dmem_we;
 
+    
     rom #(
-    .SIZE(128)
+    .SIZE(448)
     ) 
     ROM
     (
         .address({16'd0,pmem_addr[15:0]}),
         .data(pmem_data)
     );
+
 
     memory_block #(
         .SIZE(256)
@@ -45,6 +49,16 @@ module cpu_tb ();
 
 initial
 begin
+    RAM.DATA_MEM[0] = $random() % 32'd100;
+    RAM.DATA_MEM[1] = $random() % 32'd100;
+    RAM.DATA_MEM[2] = $random() % 32'd100;
+    RAM.DATA_MEM[3] = $random() % 32'd100;
+    RAM.DATA_MEM[4] = $random() % 32'd100;
+    RAM.DATA_MEM[5] = $random() % 32'd100;
+    RAM.DATA_MEM[6] = $random() % 32'd100;
+    RAM.DATA_MEM[7] = $random() % 32'd100;
+    RAM.DATA_MEM[8] = $random() % 32'd100;
+    RAM.DATA_MEM[9] = $random() % 32'd100;
     rst = 1'b1;
     clk = 1'b1;
     @(posedge clk);
@@ -55,4 +69,7 @@ always
 begin
     #5 clk = ~clk;
 end
+
+assign cdb_queue_type = CPU.BACKEND.ISSUE.mux_sel;
+
 endmodule

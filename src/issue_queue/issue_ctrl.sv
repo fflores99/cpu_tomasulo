@@ -186,6 +186,28 @@ always_comb begin : update_selector
                         op2_updt_from_cdb[i] = 1'b0;
                 end
             end
+        end else begin
+            flush[i] = 1'b0;
+            /*Reg i is not requesting data from reg i-1*/
+            updt_cmn[i] = 1'b0;
+            /*Enables writting if there is an update*/
+            reg_we[i] = reg_updt_op1[i] | reg_updt_op2[i];
+            /*Selects data from cdb*/
+            op1_updt_from_cdb[i] = 1'b1;
+            op2_updt_from_cdb[i] = 1'b1;
+            if(reg_updt_op1[i] == 1'b1)
+            /*Update op1*/
+                op1_updt_en[i] = 1'b1;               
+            else
+            /*No update*/
+                op1_updt_en[i] = 1'b0;
+
+            if(reg_updt_op2[i] == 1'b1)
+            /*Update op2*/
+                op2_updt_en[i] = 1'b1; 
+            else
+            /*No update*/
+                op2_updt_en[i] = 1'b0; 
         end
     end
 end

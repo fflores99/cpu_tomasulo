@@ -45,7 +45,7 @@ module dispatch_unit (
 * GENERAL SIGNALS                                  *
 ***************************************************/
 /*JUMP ADDRESS CALCULATOR*/
-wire alu_en;
+wire alu_en, agu_en, mul_en, div_en;
 wire [31:0] jac_imm; /*Immediate value decoded from isntruction and formated in a 32-bit signed integer*/
 /*RSx SELECTOR*/
 wire [31:0] rs1_reg_data;
@@ -309,10 +309,10 @@ dispatch_ctrl DPCH_CTRL (
     .icode(ifq_icode),
     .queue_alu_en(alu_en),
     .queue_alu_ext(queue_alu_ext),
-    .queue_agu_en(queue_agu_en),
+    .queue_agu_en(agu_en),
     .queue_agu_ls(queue_agu_ls),
-    .queue_mul_en(queue_mul_en),
-    .queue_div_en(queue_div_en),
+    .queue_mul_en(mul_en),
+    .queue_div_en(div_en),
     .ctrl_reg_w(ctrl_reg_w),
     .ctrl_jmp(ctrl_jmp),
     .ctrl_jmp_reg(ctrl_jmp_reg),
@@ -415,4 +415,7 @@ PC_QUEUE
 assign rf_rd_data = (cdb.store_pc == 1'b1) ? pc_queue_out : cdb.data;
 
 assign queue_alu_en = alu_en & nstall;
+assign queue_agu_en = agu_en & nstall;
+assign queue_mul_en = mul_en & nstall;
+assign queue_div_en = div_en & nstall;
 endmodule

@@ -7,11 +7,22 @@ module dispatch_staller (
     input branch_solved,
     input jalr_solved,
     input ifq_empty,
+
+    input alu_full,
+    input mul_full,
+    input agu_full,
+    input div_full,
+
+    input alu_dispatch,
+    input mul_dispatch,
+    input agu_dispatch,
+    input div_dispatch,
+
     output reg branch_add_reg_en,
     output reg nstall
 );
 
-typedef enum logic [1:0] {NORMAL_OP, STALLINNG_FOR_BRANCH, STALLING_FOR_JALR/*, STALLING_FOR_IFQ_NOT_EMPTY*/} fsm_state;
+typedef enum logic [1:0] {NORMAL_OP, STALLINNG_FOR_BRANCH, STALLING_FOR_JALR, STALLING_FOR_QUEUE_FREE/*, STALLING_FOR_IFQ_NOT_EMPTY*/} fsm_state;
 
 fsm_state state;
 
@@ -47,7 +58,9 @@ always_ff @( posedge clk, posedge rst ) begin : sequential
                     state <= STALLINNG_FOR_BRANCH;
                 else if(jalr)
                     state <= STALLING_FOR_JALR;
-/*                
+                else if((alu_dispatch & alu_full) | (mul_dispatch & mul_full) | (div_dispatch & div_full) | (agu_dispatch & agu_full) )
+                    state <= STALLING_FOR_QUEUE_FREE;
+/*               
                 else if(ifq_empty)
                     state <= STALLING_FOR_IFQ_NOT_EMPTY;
 */
@@ -63,6 +76,11 @@ always_ff @( posedge clk, posedge rst ) begin : sequential
                     state <= NORMAL_OP;
                 else
                     state <= STALLING_FOR_JALR;
+            STALLING_FOR_QUEUE_FREE:
+                if((alu_dispatch & alu_full) | (mul_dispatch & mul_full) | (div_dispatch & div_full) | (agu_dispatch & agu_full) )
+                    state <= STALLING_FOR_QUEUE_FREE;
+                else
+                    state <= NORMAL_OP;
 /*
             STALLING_FOR_IFQ_NOT_EMPTY:
                 if(ifq_empty)

@@ -7,7 +7,10 @@ reg [31:0] mem_data [SIZE/4];
 
 initial
   begin
-    $readmemh("C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/frontend_test.txt", mem_data);
+    //$readmemh("C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/frontend_test.txt", mem_data);
+    
+    //$readmemh("C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/assembly/bin/bubble_selection_sort.txt", mem_data);
+  $readmemh("../../assembly/bin/bubble_selection_sort.txt", mem_data);
   end
 
 assign data[31:0] = mem_data[{address[31:4],2'b00}];

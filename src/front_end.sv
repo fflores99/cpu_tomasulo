@@ -26,11 +26,15 @@ module tomasulo_front_end_cluster (
     /*AGU signals*/
     output queue_agu_en,
     output queue_agu_ls,
-    output queue_agu_imm,
+    output [31:0] queue_agu_imm,
     /*Mult queue*/
     output queue_mul_en,
     /*Div queue*/
     output queue_div_en,
+    input alu_full,
+    input mul_full,
+    input agu_full,
+    input div_full,
     /*****Backend Return*****/
     cdb_if cdb
 );
@@ -97,7 +101,11 @@ dispatch_unit DPCH_UNIT (
     /*Mult queue*/
     .queue_mul_en(queue_mul_en),
     /*Div queue*/
-    .queue_div_en(queue_div_en)
+    .queue_div_en(queue_div_en),
+    .alu_full(alu_full),
+    .mul_full(mul_full),
+    .agu_full(agu_full),
+    .div_full(div_full)
 );
 
 endmodule

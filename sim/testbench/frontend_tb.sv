@@ -28,15 +28,16 @@ module frontend_tb ();
     /*AGU signals*/
     wire queue_agu_en;
     wire queue_agu_ls;
-    wire queue_agu_imm;
+    wire [31:0] queue_agu_imm;
     /*Mult queue*/
     wire queue_mul_en;
     /*Div queue*/
     wire queue_div_en;
     cdb_if cdb();
 
+
     rom #(
-    .SIZE(128)
+    .SIZE(448)
     ) 
     PMEM 
     (

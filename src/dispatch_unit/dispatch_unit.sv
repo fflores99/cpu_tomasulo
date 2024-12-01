@@ -30,17 +30,22 @@ module dispatch_unit (
     /*AGU signals*/
     output queue_agu_en,
     output queue_agu_ls,
-    output queue_agu_imm,
+    output [31:0] queue_agu_imm,
     /*Mult queue*/
     output queue_mul_en,
     /*Div queue*/
-    output queue_div_en    
+    output queue_div_en,
+    input alu_full,
+    input mul_full,
+    input agu_full,
+    input div_full
 );
 
 /***************************************************
 * GENERAL SIGNALS                                  *
 ***************************************************/
 /*JUMP ADDRESS CALCULATOR*/
+wire alu_en, agu_en, mul_en, div_en;
 wire [31:0] jac_imm; /*Immediate value decoded from isntruction and formated in a 32-bit signed integer*/
 /*RSx SELECTOR*/
 wire [31:0] rs1_reg_data;
@@ -272,6 +277,17 @@ dispatch_staller STALLER (
     .branch_solved(cdb.branch),
     .jalr_solved(cdb.jalr),
     .ifq_empty(ifq_empty),
+
+    .alu_full(alu_full),
+    .mul_full(mul_full),
+    .agu_full(agu_full),
+    .div_full(div_full),
+
+    .alu_dispatch(queue_alu_en),
+    .mul_dispatch(queue_mul_en),
+    .agu_dispatch(queue_agu_en),
+    .div_dispatch(queue_div_en),
+
     .nstall(nstall),
     .branch_add_reg_en(staller_br_addr_reg_en)
 );
@@ -291,12 +307,12 @@ assign icode_rd     = ifq_icode[11:7];
 */
 dispatch_ctrl DPCH_CTRL (
     .icode(ifq_icode),
-    .queue_alu_en(queue_alu_en),
+    .queue_alu_en(alu_en),
     .queue_alu_ext(queue_alu_ext),
-    .queue_agu_en(queue_agu_en),
+    .queue_agu_en(agu_en),
     .queue_agu_ls(queue_agu_ls),
-    .queue_mul_en(queue_mul_en),
-    .queue_div_en(queue_div_en),
+    .queue_mul_en(mul_en),
+    .queue_div_en(div_en),
     .ctrl_reg_w(ctrl_reg_w),
     .ctrl_jmp(ctrl_jmp),
     .ctrl_jmp_reg(ctrl_jmp_reg),
@@ -351,10 +367,10 @@ QUEUE_OP2_MUX
     .SEL(ctrl_op2_sel),
     .Y(queue_op2_data)
 );
-/*OPERAND 1 VALID*/
-assign queue_op1_data_valid = ~rs1_tag_valid | rs1_cdb_fw;
-/*OPERAND 2 VALID*/
-assign queue_op2_data_valid = ~rs2_tag_valid | rs2_cdb_fw;
+/*OPERAND 1 VALID. If value is forced to 0 or PC, data is valid, else, depends on register status*/
+assign queue_op1_data_valid = (ctrl_op1_sel != 2'b01) ? 1'b1 : ~rs1_tag_valid | rs1_cdb_fw;
+/*OPERAND 2 VALID. If value is forced to immediate, data is valid, else, depends on register status*/
+assign queue_op2_data_valid = (ctrl_op2_sel != 1'b1) ? 1'b1 : ~rs2_tag_valid | rs2_cdb_fw;
 /***************************************************
 * PC QUEUE STORAGE                                 *
 ***************************************************/
@@ -398,4 +414,8 @@ PC_QUEUE
  */
 assign rf_rd_data = (cdb.store_pc == 1'b1) ? pc_queue_out : cdb.data;
 
+assign queue_alu_en = alu_en & nstall;
+assign queue_agu_en = agu_en & nstall;
+assign queue_mul_en = mul_en & nstall;
+assign queue_div_en = div_en & nstall;
 endmodule

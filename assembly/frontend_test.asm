@@ -14,7 +14,7 @@ Init:
 	add tp, tp, gp
 	
 	mul sp, gp, tp
-	div sp, sp, gp
+	div a7, sp, gp
 	
 	sw gp, x, t0
 	sw sp, y, t0

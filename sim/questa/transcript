@@ -9695,3 +9695,211 @@ restart
 run
 run
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/do/cpu_sim.do
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum int cpu_tb.<enum#1>' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb File: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/cpu_tb.sv Line: 73
+run
+# ** Warning: (vsim-7) Failed to open readmem file "../assembly/bin/bubble_selection_sort.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/src/rom.sv(13)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/ROM
+# Compile of adder_param.sv was successful.
+# Compile of cdb_interface.sv was successful.
+# Compile of mux_param.sv was successful.
+# Compile of one_hot_param.sv was successful.
+# Compile of reg_param.sv was successful.
+# Compile of reg_param_sync_async.sv was successful.
+# Compile of dispatch_ctrl.sv was successful.
+# Compile of dispatch_staller.sv was successful.
+# Compile of dispatch_unit.sv was successful.
+# Compile of fifo_param.sv was successful.
+# Compile of imm_gen.sv was successful.
+# Compile of reg_stat_table.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of tag_fifo.sv was successful.
+# Compile of circular_buff.sv was successful.
+# Compile of ifq.sv was successful.
+# Compile of front_end.sv was successful.
+# Compile of frontend_tb.sv was successful.
+# Compile of rom.sv was successful.
+# Compile of alu_reservation_queue.sv was successful.
+# Compile of alu_reservation_reg.sv was successful.
+# Compile of mul_div_reservation_queue.sv was successful.
+# Compile of mul_div_reservation_reg.sv was successful.
+# Compile of agu_reservation_queue.sv was successful.
+# Compile of agu_reservation_reg.sv was successful.
+# Compile of issue_ctrl.sv was successful.
+# Compile of agu_unit.sv was successful.
+# Compile of alu_param.v was successful.
+# Compile of alu_unit.sv was successful.
+# Compile of cond_ctrl.sv was successful.
+# Compile of division_unit.sv was successful.
+# Compile of mult_unit.sv was successful.
+# Compile of memory_block.sv was successful.
+# Compile of cdb_slot.sv was successful.
+# Compile of dummy_pipe.sv was successful.
+# Compile of issue_unit.sv was successful.
+# Compile of lru_ctrl.sv was successful.
+# Compile of back_end.sv was successful.
+# Compile of tomasulo_cpu.sv was successful.
+# Compile of cpu_tb.sv was successful.
+# 40 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.memory_block(fast)
+# Loading work.tomasulo_cpu(fast)
+# Loading work.cdb_if(fast__1)
+# Loading work.tomasulo_front_end_cluster(fast)
+# Loading work.ifq(fast)
+# Loading work.reg_param(fast)
+# Loading work.adder_param(fast)
+# Loading work.mux_param(fast)
+# Loading work.circular_buff(fast)
+# Loading work.mux_param(fast__1)
+# Loading work.dispatch_unit(fast)
+# Loading work.imm_gen(fast)
+# Loading work.register_file(fast)
+# Loading work.one_hot_param(fast)
+# Loading work.reg_param(fast__1)
+# Loading work.mux_param(fast__2)
+# Loading work.tag_fifo(fast)
+# Loading work.reg_stat_table(fast)
+# Loading work.dispatch_staller(fast)
+# Loading work.dispatch_ctrl(fast)
+# Loading work.fifo_param(fast)
+# Loading work.tomasulo_back_end_cluster(fast)
+# Loading work.alu_reservation_queue(fast)
+# Loading work.issue_ctrl(fast)
+# Loading work.alu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast)
+# Loading work.reg_param_sync_async(fast__1)
+# Loading work.reg_param_sync_async(fast__2)
+# Loading work.mux_param(fast__3)
+# Loading work.alu_unit(fast)
+# Loading work.cond_ctrl(fast)
+# Loading work.alu_param(fast)
+# Loading work.mul_div_reservation_queue(fast)
+# Loading work.mul_div_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__3)
+# Loading work.mux_param(fast__4)
+# Loading work.mult_unit(fast)
+# Loading work.reg_param(fast__2)
+# Loading work.div_unit(fast)
+# Loading work.agu_reservation_queue(fast)
+# Loading work.agu_reservation_reg(fast)
+# Loading work.reg_param_sync_async(fast__4)
+# Loading work.mux_param(fast__5)
+# Loading work.agu_unit(fast)
+# Loading work.issue_unit(fast)
+# Loading work.lru_ctrl(fast)
+# Loading work.cdb_slot(fast)
+# Loading work.dummy_pipe(fast)
+# Loading work.dummy_pipe(fast__1)
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum int cpu_tb.<enum#1>' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb File: C:/Users/frfdm/Documents/MDI/Repositories/cpu_tomasulo/sim/testbench/cpu_tb.sv Line: 73
+run
+run
+# End time: 23:41:23 on Nov 30,2024, Elapsed time: 14:43:00
+# Errors: 0, Warnings: 3
